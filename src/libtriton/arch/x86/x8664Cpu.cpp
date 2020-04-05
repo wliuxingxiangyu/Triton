@@ -1374,6 +1374,16 @@ namespace triton {
             break;
           }
 
+          case triton::arch::ID_REG_X86_MXCSR_MASK: (*((triton::uint32*)(this->mxcsr_mask)))  = value.convert_to<triton::uint32>(); break;
+          case triton::arch::ID_REG_X86_FIP:        (*((triton::uint64*)(this->fip)))         = value.convert_to<triton::uint64>(); break;
+          case triton::arch::ID_REG_X86_FDP:        (*((triton::uint64*)(this->fdp)))         = value.convert_to<triton::uint64>(); break;
+          case triton::arch::ID_REG_X86_FCW:        (*((triton::uint16*)(this->fcw)))         = value.convert_to<triton::uint16>(); break;
+          case triton::arch::ID_REG_X86_FSW:        (*((triton::uint16*)(this->fsw)))         = value.convert_to<triton::uint16>(); break;
+          case triton::arch::ID_REG_X86_FOP:        (*((triton::uint16*)(this->fop)))         = value.convert_to<triton::uint16>(); break;
+          case triton::arch::ID_REG_X86_FCS:        (*((triton::uint16*)(this->fcs)))         = value.convert_to<triton::uint16>(); break;
+          case triton::arch::ID_REG_X86_FDS:        (*((triton::uint16*)(this->fds)))         = value.convert_to<triton::uint16>(); break;
+          case triton::arch::ID_REG_X86_FTW:        (*((triton::uint8*) (this->ftw)))         = value.convert_to<triton::uint8>();  break;
+
           case triton::arch::ID_REG_X86_CR0:  (*((triton::uint64*)(this->cr0)))  = value.convert_to<triton::uint64>(); break;
           case triton::arch::ID_REG_X86_CR1:  (*((triton::uint64*)(this->cr1)))  = value.convert_to<triton::uint64>(); break;
           case triton::arch::ID_REG_X86_CR2:  (*((triton::uint64*)(this->cr2)))  = value.convert_to<triton::uint64>(); break;
