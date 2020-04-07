@@ -5243,6 +5243,7 @@ namespace triton {
             tritonId = triton::arch::x86::ID_INS_XTEST;
             break;
 
+/* capstone-4.0 failed  https://github.com/JonathanSalwan/Triton/issues/459 
           case triton::extlibs::capstone::X86_INS_ENDBR32:
             tritonId = triton::arch::x86::ID_INS_ENDBR32;
             break;
@@ -5250,6 +5251,7 @@ namespace triton {
           case triton::extlibs::capstone::X86_INS_ENDBR64:
             tritonId = triton::arch::x86::ID_INS_ENDBR64;
             break;
+*/
 
           default:
             tritonId = triton::arch::x86::ID_INS_INVALID;
